@@ -1,6 +1,9 @@
 {
   "name": "campuscloude",
   "version": "0.1.0",
+  "description": "complete college managment system",
+  "repository": "git@github.com:activationeuron/compuscloud.git",
+  "author": "amitkumar rai",
   "private": true,
   "dependencies": {
     "react": "^16.13.1",
