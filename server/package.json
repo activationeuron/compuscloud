@@ -1,0 +1,7 @@
+{
+  "name": "servercampuscloud",
+  "version": "1.0.0",
+  "description": "server for campus cloud application",
+  "main": "index.js",
+  "license": "MIT"
+}
