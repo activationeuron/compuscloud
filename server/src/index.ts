@@ -1,9 +1,13 @@
-import express, { Application, Request, Response } from "express";
+import express, { Application } from "express";
+import { ApolloServer } from "apollo-server-express";
+import { executableSchema } from "../graphql/index";
 const app: Application = express();
 
-app.get("/", (req: Request, res: Response) => {
-  res.json({ status: "od" });
+const server = new ApolloServer({
+  schema: executableSchema,
 });
+
+server.applyMiddleware({ app });
 
 app.listen(3000, () => {
   console.log("App Running on port http://localhost:3000");

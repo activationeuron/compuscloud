@@ -5,7 +5,10 @@
   "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "apollo-server-express": "^2.18.1",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "graphql-modules": "^1.0.0-alpha.2"
   },
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
