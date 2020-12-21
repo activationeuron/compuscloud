@@ -2,6 +2,25 @@
   "name": "servercampuscloud",
   "version": "1.0.0",
   "description": "server for campus cloud application",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.18.1",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "graphql-modules": "^1.0.0-alpha.2"
+  },
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prestart": "npm run build",
+    "dev": "ts-node src/index.ts",
+    "start": "ts-node dist/index.js",
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.10.2",
+    "ts-node": "^9.0.0",
+    "tslint": "^6.1.3"
+  }
 }
